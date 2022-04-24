@@ -1,1 +1,15 @@
-<p>drop-dowm-menu works!</p>
+<div class="drop-down-menu">
+    <div class="select-items" style="display: flex">
+        <span>{{selectedOption.name}}</span>
+
+        <div class="option-count">
+            <span>{{selectedOption.id}}</span> / <span>{{options.length}}</span>
+        </div>
+
+        <div class="drop-down">
+            <ul *ngFor="let el of options">
+                <li>{{el.name}}</li>
+            </ul>
+        </div>
+    </div>
+</div>

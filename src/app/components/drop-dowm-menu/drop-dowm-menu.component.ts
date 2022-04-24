@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { DropDownMenuData } from 'src/app/interfaces/drop-down-menu';
 
 @Component({
   selector: 'app-drop-dowm-menu',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./drop-dowm-menu.component.scss']
 })
 export class DropDowmMenuComponent implements OnInit {
+  @Input() options: DropDownMenuData[] = []
+  @Input() selectedOption!: DropDownMenuData;
 
   constructor() { }
 
