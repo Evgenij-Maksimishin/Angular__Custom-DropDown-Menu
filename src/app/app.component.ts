@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { DropDowmMenuComponent } from './components/drop-dowm-menu/drop-dowm-menu.component';
 import { DropDownMenuData } from './interfaces/drop-down-menu';
 
 @Component({
