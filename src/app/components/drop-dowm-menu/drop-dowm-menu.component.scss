@@ -10,6 +10,9 @@
         cursor: pointer;
         .option-count {
             padding-left: 35px;
+            .option-count__color {
+                font-weight: bold;
+            }
         }
     }
 
