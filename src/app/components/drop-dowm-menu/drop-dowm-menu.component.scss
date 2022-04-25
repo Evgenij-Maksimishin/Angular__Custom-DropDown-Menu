@@ -33,4 +33,27 @@
         }
         
     }
+
+    &.close::after {
+        content: "";
+        position: absolute;
+        top: 3.7%;
+        left: 20%;
+        background-image: url("../../../assets/images/angle-down-solid.svg");
+        background-repeat: no-repeat;
+        height: 13px;
+        width: 14px;
+    }
+
+    &.open::after {
+        content: "";
+        position: absolute;
+        top: 3.7%;
+        left: 20%;
+        background-image: url("../../../assets/images/angle-down-solid.svg");
+        background-repeat: no-repeat;
+        height: 13px;
+        width: 14px;
+        transform: rotate(180deg);
+    }
 }
