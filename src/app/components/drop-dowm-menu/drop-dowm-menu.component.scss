@@ -1,0 +1,36 @@
+.drop-down-menu {
+    margin-top: 15px;
+    .select-items {
+        position: relative;
+        background: rgb(182, 182, 240);
+        width: 200px;
+        padding: 10px 0px 10px 7px;
+        border: 0;
+        border-radius: 8px;
+        cursor: pointer;
+        .option-count {
+            padding-left: 35px;
+        }
+    }
+
+    .drop-down-menu {
+        margin-top: 0px;
+        width: 200px;
+        height: 130px;
+        overflow: auto;
+        position: absolute;
+        top: 7%;
+        background: rgb(182, 182, 240);
+        opacity: 0.9;
+        border-radius: 4px;
+        .drop-down-menu__item {
+            padding: 7px 0px 7px 10px;
+            cursor: pointer;
+            &:hover {
+                background: rgb(162, 162, 243);
+                padding: 7px 0px 7px 10px;
+            }
+        }
+        
+    }
+}

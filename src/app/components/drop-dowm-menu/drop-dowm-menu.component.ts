@@ -10,6 +10,8 @@ export class DropDowmMenuComponent implements OnInit {
   @Input() options: DropDownMenuData[] = []
   @Input() selectedOption!: DropDownMenuData;
 
+  public isDropDownOpen = false;
+
   constructor() { }
 
   ngOnInit(): void {

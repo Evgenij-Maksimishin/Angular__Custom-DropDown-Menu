@@ -1,15 +1,15 @@
 <div class="drop-down-menu">
-    <div class="select-items" style="display: flex">
-        <span>{{selectedOption.name}}</span>
+    <div class="select-items" style="display: flex" (click)="isDropDownOpen = !isDropDownOpen">
+
+        <span class="option-name">{{selectedOption.name}}</span>
 
         <div class="option-count">
             <span>{{selectedOption.id}}</span> / <span>{{options.length}}</span>
         </div>
 
-        <div class="drop-down">
-            <ul *ngFor="let el of options">
-                <li>{{el.name}}</li>
-            </ul>
-        </div>
     </div>
+
+    <ul class="drop-down-menu" *ngIf="isDropDownOpen">
+        <li class="drop-down-menu__item" *ngFor="let el of options">{{el.name}}</li>
+    </ul>
 </div>
