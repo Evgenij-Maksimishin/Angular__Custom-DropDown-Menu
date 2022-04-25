@@ -1,4 +1,10 @@
-<div class="drop-down-menu" [ngClass]="{'open': isDropDownOpen, 'close': !isDropDownOpen}">
+<div 
+    class="drop-down-menu" 
+    appOutsideClick
+    (outsideClick)="isDropDownOpen = false"
+    [ngClass]="{'open': isDropDownOpen, 'close': !isDropDownOpen}"
+
+    >
     <div class="select-items" style="display: flex" (click)="isDropDownOpen = !isDropDownOpen">
 
         <span class="option-name">{{selectedOption.name}}</span>

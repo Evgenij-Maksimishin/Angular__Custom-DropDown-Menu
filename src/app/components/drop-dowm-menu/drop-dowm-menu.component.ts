@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { DropDownMenuData } from 'src/app/interfaces/drop-down-menu';
 
 @Component({
@@ -9,7 +9,7 @@ import { DropDownMenuData } from 'src/app/interfaces/drop-down-menu';
 export class DropDowmMenuComponent implements OnInit {
   @Input() options: DropDownMenuData[] = []
   @Input() selectedOption!: DropDownMenuData;
-
+  @Output() outsideClick = new EventEmitter<DropDownMenuData>();
   public isDropDownOpen = false;
 
   constructor() { }
