@@ -10,6 +10,12 @@
     </div>
 
     <ul class="drop-down-menu" *ngIf="isDropDownOpen">
-        <li class="drop-down-menu__item" *ngFor="let el of options">{{el.name}}</li>
+        <li 
+            class="drop-down-menu__item" 
+            *ngFor="let el of options" 
+            (click)="selectItem(el)"
+            >
+            {{el.name}}
+        </li>
     </ul>
 </div>

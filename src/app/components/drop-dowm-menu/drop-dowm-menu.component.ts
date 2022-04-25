@@ -17,4 +17,9 @@ export class DropDowmMenuComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  selectItem(el: DropDownMenuData) {
+    this.selectedOption = el;
+    this.isDropDownOpen = false;
+  }
+
 }
